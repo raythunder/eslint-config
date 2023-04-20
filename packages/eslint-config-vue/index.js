@@ -1,6 +1,7 @@
-const { isPackageExists } = require('local-pkg')
+// const { isPackageExists } = require('local-pkg')
 
-const TS = isPackageExists('typescript')
+// const TS = isPackageExists('typescript')
+const TS = false
 
 if (!TS)
   console.warn('[@antfu/eslint-config] TypeScript is not installed, fallback to JS only.')

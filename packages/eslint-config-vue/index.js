@@ -1,19 +1,10 @@
-// const { isPackageExists } = require('local-pkg')
-
-// const TS = isPackageExists('typescript')
 const TS = false
-
-if (!TS)
-  console.warn('[@antfu/eslint-config] TypeScript is not installed, fallback to JS only.')
 
 module.exports = {
   overrides: [
     {
       files: ['*.vue'],
       parser: 'vue-eslint-parser',
-      parserOptions: {
-        parser: '@typescript-eslint/parser',
-      },
       rules: {
         'no-unused-vars': 'off',
         'no-undef': 'off',
